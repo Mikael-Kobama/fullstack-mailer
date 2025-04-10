@@ -11,6 +11,7 @@ function App() {
         value={email}
         onChange={(event) => setEmail(event.target.value)}
         name="email"
+        label="Digite seu e-mail"
       />
     </>
   );

@@ -1,11 +1,14 @@
-import { Input } from "@chakra-ui/react";
 import { ChangeEventHandler } from "react";
+import { Input } from "@chakra-ui/react";
+
+import "./primary-input.css";
 
 interface PrimaryInputProps {
   name: string;
   value: string;
   onChange: ChangeEventHandler<HTMLInputElement>;
   label: string;
+  placeholder: string;
 }
 
 export default function PrimaryInput({
@@ -13,6 +16,7 @@ export default function PrimaryInput({
   value,
   onChange,
   label,
+  placeholder,
 }: PrimaryInputProps) {
   return (
     <div className="input-container">
